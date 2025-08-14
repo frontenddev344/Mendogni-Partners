@@ -107,7 +107,7 @@ main > section{scroll-margin-top:var(--anchor-offset)}
 .sub-hero p{margin:0;text-align:center;color:var(--muted)}
 
 /* KPIs */
-.kpis{padding:26px 0}
+.kpis{padding:50px 0}
 .kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .kpi{background:var(--card);border:1px solid #e4ece8;border-radius:14px;padding:24px;text-align:center;transition:transform .25s, box-shadow .25s, border-color .25s}
 .kpi:hover{transform:translateY(-4px);border-color:#c7e2d9;box-shadow:0 10px 22px rgba(18,54,45,.08)}
