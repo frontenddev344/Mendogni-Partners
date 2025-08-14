@@ -309,6 +309,14 @@ main > section{scroll-margin-top:var(--anchor-offset)}
 @media (max-width: 720px){
   .footer-grid{grid-template-columns:1fr}
   .footer-brand p{max-width:100%}
+  .hero-copy h1 {
+    font-size: 29px;
+
+}
+.hero-copy h1 span {
+  display: block;
+  min-height: 33px;
+}
 }
 
 /* subtle infinite float for images */
