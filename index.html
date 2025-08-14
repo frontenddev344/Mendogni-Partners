@@ -356,7 +356,8 @@
       duration: 1200,
       easing: 'ease-out-cubic',
       offset: 100,
-      anchorPlacement: 'top-bottom'
+      anchorPlacement: 'top-bottom',
+      disable: function(){ return window.innerWidth < 768; }
     });
     // Nav active on scroll
     (function(){
