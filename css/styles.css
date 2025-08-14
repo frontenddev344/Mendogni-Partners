@@ -41,7 +41,8 @@ main > section{scroll-margin-top:var(--anchor-offset)}
 .site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e8efec}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;overflow:hidden;width:var(--brand-width)}
-.brand-logo{height:26px;width:auto;display:block;animation:none;transform-origin:center;will-change:transform}
+.brand-logo{height:26px;width:auto;display:block;animation:none;transform-origin:center;will-change:transform;transition:transform .2s ease, filter .2s ease}
+.brand:hover .brand-logo{transform:scale(1.08);filter:drop-shadow(0 4px 10px rgba(0,0,0,.18)) brightness(1.05)}
 .brand-track{display:flex;gap:40px;align-items:center;min-width:calc(var(--brand-width) * 2 + 40px);animation:brandMarquee 4s linear infinite}
 .brand-text{font-weight:700}
 .main-nav{display:flex;align-items:center;gap:22px}
