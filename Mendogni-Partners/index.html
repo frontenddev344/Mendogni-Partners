@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mendogni & Partners</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon-m.svg" />
+  <link rel="alternate icon" type="image/png" href="images/logo.png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
+  <meta name="theme-color" content="#1b8f6a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <img src="images/logo.png" alt="Mendogni & Partners Logo" class="brand-logo" onerror="this.onerror=null;this.src='images/LOGO.png'" />
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+      <label for="nav-toggle" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav">
+        <a href="#solutions">Per i Clienti</a>
+        <a href="#about">Chi siamo</a>
+        <a href="#why">Perché Sceglierci</a>
+        <a href="#contact">Contatti</a>
+        <a href="#consultation" class="btn btn-primary btn-small">Contattaci</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero reveal">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Automation for the CFO Office — <span class="accent">Powered by UiPath</span></h1>
+          <p>Aiutiamo le aziende ad automatizzare i processi amministrativi grazie all'intelligenza artificiale e alla robotica.</p>
+          <div class="hero-actions">
+            <a href="#consultation" class="btn btn-primary">Contattaci</a>
+            <a href="#solutions" class="btn btn-outline">Soluzioni</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="images/banner.jpg" alt="Finance automation dashboard" onerror="this.onerror=null;this.src='images/Picture1.jpg'" />
+        </div>
+      </div>
+    </section>
+
+    <!-- KPIs -->
+    <section class="kpis reveal">
+      <div class="container kpi-grid">
+        <div class="kpi">
+          <div class="kpi-number"><span class="count" data-target="5782">0</span></div>
+          <div class="kpi-label">Registrazioni Fatture</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-number"><span class="count" data-target="8940">0</span></div>
+          <div class="kpi-label">Bonifici Allocati (€/mln)</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-number"><span class="count" data-target="12345">0</span></div>
+          <div class="kpi-label">Registrazioni Contabili.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about reveal" id="about">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <h2>About Mendogni & Partners</h2>
+          <p>Mendogni & Partners S.r.l. è un'azienda specializzata nell'automazione dei processi di amministrazione, finanza e controllo. Grazie alla partnership con UiPath uniamo le nostre competenze sui processi alle migliori tecnologie di intelligenza artificiale e di robotica.</p>
+          <p>Sperimentiamo ogni giorno il contributo dell'automazione ai risultati aziendali, alla produttività degli uffici e alla qualità della vita delle persone. Questi sono gli obiettivi dei nostri progetti.</p>
+          <div class="about-badge">
+            <img src="images/UiPath Authorized Partner Logos/digital-rgb/PNG/uipath-partner-authorized-lockup-digital-rgb-ob.png" alt="Authorized UiPath Partner" />
+            <span>Authorized UiPath Partner</span>
+          </div>
+        </div>
+        <div class="about-media">
+          <img src="images/Picture5.jpg" alt="Team collaborating in a finance meeting" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions -->
+    <section class="solutions reveal" id="solutions">
+      <div class="container">
+        <div class="section-head">
+          <h2>Per i Clienti</h2>
+          <p>Realizziamo soluzioni di automazione per i vostri processi amministrativi, utilizzando i vostri sistemi e applicando le vostre regole aziendali.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-media">
+              <img src="images/Picture2.jpg" alt="Invoice processing robots" />
+            </div>
+            <div class="card-body">
+              <h3>Fatture Passive</h3>
+              <p>Registrazione fatture con ordine (il robot esegue gli abbinamenti e gestisce i problemi) e senza ordine (il robot decide i parametri di contabilizzazione).</p>
+              <ul class="checklist">
+                <li>Utilizzo del sistema contabile</li>
+                <li>Analisi delle fatture con AI</li>
+                <li>Interazione con gli utenti</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="images/Picture3.jpg" alt="Cash allocation agents" />
+            </div>
+            <div class="card-body">
+              <h3>Allocazione Incassi</h3>
+              <p>Analisi degli estratti conto bancari e abbinamento incassi con clienti e partite aperte.</p>
+              <ul class="checklist">
+                <li>Lettura file CBI</li>
+                <li>Analisi con AI</li>
+                <li>Registrazione in contabilità</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="images/Picture4.jpg" alt="SAP posting automation" />
+            </div>
+            <div class="card-body">
+              <h3>Contabilità Generale</h3>
+              <p>Contabilizzazioni, stampa registri iva, scarico quietanze da Agenzia delle Entrate, processi di firma, processi autorizzativi, inserimento contatti, ecc.</p>
+              <ul class="checklist">
+                <li>Attività ripetitive</li>
+                <li>Reporting giornaliero</li>
+                <li>Governati dalle persone</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why reveal" id="why">
+      <div class="container">
+        <h2>Why Choose Us</h2>
+        <p class="why-sub">Oltre 25 anni di esperienza al servizio di aziende di ogni dimensione e settore</p>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">★</div>
+            <h4>Velocità</h4>
+            <p>Our team combines deep financial knowledge with technical expertise to deliver solutions that address real business challenges.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">🤝</div>
+            <h4>UiPath Partnership</h4>
+            <p>Come Authorized UiPath Partner forniamo ai clienti le migliori tecnologie di robotica e intelligenza artificiale.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">🚀</div>
+            <h4>Persone</h4>
+            <p>Il primo approccio del personale amministrativo con i robot è spesso di paura, talvolta di odio. E' umano. Durante i nostri lavori abbiamo visto spesso cambiare questi sentimenti in qualcosa che possiamo definire ... amicizia.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">🛡️</div>
+            <h4>Supporto Dedicato</h4>
+            <p>Forniamo assistenza continua per monitorare l'attività dei robot e per migliorare continuamente i processi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partner CTA -->
+    <section class="partner-cta reveal">
+      <div class="container partner-grid">
+        <div class="partner-copy">
+          <h3>Authorized UiPath Partner</h3>
+          <p>As an official UiPath Partner, we leverage the world's leading enterprise automation platform to
+            deliver powerful solutions for finance departments. Our certified developers and consultants ensure
+            you get the most out of your automation investment.</p>
+          <a href="#consultation" class="btn btn-outline">Learn About Our Partnership</a>
+        </div>
+        <div class="partner-media">
+          <img src="images/UiPath Authorized Partner Logos/digital-rgb/PNG/uipath-partner-authorized-lockup-digital-rgb-ob.png" alt="Authorized UiPath Partner logo" onerror="this.onerror=null;this.src='images/UiPath Authorized Partner Logos/digital-rgb/PNG/uipath-partner-authorized-lockup-digital-rgb-ow.png'" />
+        </div>
+      </div>
+    </section>
+
+  <!-- Leaders (CEO / CFO) -->
+  <section class="leaders reveal" id="leaders">
+    <div class="container leaders-grid">
+      <div class="leader-col">
+        <h2>CdA – CEO</h2>
+        <div class="accordion">
+          <details>
+            <summary>Vogliamo quotarci in Borsa, cosa ci serve ?</summary>
+            <div class="acc-body">
+              <p>Grazie all’esperienza di oltre 50 operazioni in 25 anni (tra cui 15 società FTSE MIB e 12 società FTSE Italia STAR) possiamo aiutarvi a capire i passi necessari per raggiungere il fatidico primo giorno di quotazione. Quello in cui <strong>suonerete la campanella a Palazzo Mezzanotte</strong>. Una volta delineato il piano di azione possiamo aiutarvi a realizzarlo: equity story, management team, sistema di controllo interno, controllo di gestione, strategia di disclosure dei dati, selezione degli advisor, pianificazione dell’operazione, compliance, ecc.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Come possiamo migliorare l’organizzazione ?</summary>
+            <div class="acc-body">
+              <p>Crediamo fortemente che <strong>il successo delle aziende dipenda dalle persone</strong> che ne fanno parte. L’organizzazione aziendale deve metterle nelle migliori condizioni per esprimersi al meglio. Possiamo aiutarvi a comprendere, anche con analisi comparative, se ci sono margini di miglioramento. Nella consapevolezza che siete voi nella migliore posizione per valutare le vostre persone.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Dove possiamo migliorare i nostri processi ?</summary>
+            <div class="acc-body">
+              <p>Analizzare i processi e proporre opportunità di miglioramento per noi significa principalmente due cose: avere gli strumenti giusti per <strong>misurarne l’efficienza e l’efficacia</strong> e aiutarvi a valutare come l’impiego delle (nuove) tecnologie possa migliorarli.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Quali opportunità offrono le nuove tecnologie ?</summary>
+            <div class="acc-body">
+              <p>L’innovazione tecnologica è sempre più veloce e impatta ogni ambito della nostra vita. Per noi la parola chiave è <strong>semplicità</strong>. Desideriamo aiutarvi a capire, nel concreto, i benefici realizzabili utilizzando le tecnologie. Sia quelle più recenti (intelligenza artificiale, data robot, algoritmi, ecc.) sia quelle più tradizionali.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Come posso incentivare il management e il personale ?</summary>
+            <div class="acc-body">
+              <p>Allineare gli obiettivi delle persone con quelli della società è una sfida. <strong>Condividere</strong> gli obiettivi strategici, <strong>coinvolgere</strong> le persone a vari livelli nel piano di azione per realizzarli, definire <strong>obiettivi chiari</strong>, realistici e realizzabili sono per noi gli aspetti chiave. Crediamo che lo scopo finale sia definire un piano di incentivazione nel quale se ciascuno raggiunge gli obiettivi la società/gruppo realizza il proprio piano industriale.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="leader-col">
+        <h2>CFO</h2>
+        <div class="accordion">
+          <details>
+            <summary>I robot sostituiranno i CFO ?</summary>
+            <div class="acc-body">
+              <p>Non siamo appassionati di fantascienza. Crediamo fortemente che la risposta alla domanda sia no. Però possiamo aiutarvi ad applicare le tecnologie legate alla robotica e all’intelligenza artificiale nei processi amministrativi. L’aspetto principale è comprendere <strong>quale tecnologia utilizzare dove</strong>.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Come posso migliorare i processi di pianificazione e controllo ?</summary>
+            <div class="acc-body"><p>Piano industriale, budget, reporting, forecast. Gli strumenti fondamentali per la gestione aziendale e la comunicazione interna ed esterna. <strong>Disporre di informazioni corrette, complete, tempestive è l’elemento chiave del processo decisionale</strong>. Altrettanto importante evitare l’abbuffata di numeri. Ci piace disegnare modelli di pianificazione e reporting chiari e specifici per il settore in cui operate. Per farlo ci facciamo sempre guidare dall’analisi comparativa con le società del settore. Una volta definito cosa serve vi possiamo guidare nella realizzazione anche tramite l’adozione di specifici strumenti tecnologici.</p></div>
+          </details>
+          <details>
+            <summary>Come posso migliorare i processi amministrativi ?</summary>
+            <div class="acc-body"><p>I processi amministrativi rappresentano un ottimo punto di partenza per l’adozione delle nuove tecnologie. L’utilizzo di data robot e di specifici algoritmi di intelligenza artificiale <strong>sono ormai una realtà in molte aziende</strong> per gestire tutte o alcune fasi della fatturazione passiva, dell’allocazione degli incassi, delle registrazioni contabili, delle riconciliazioni e molte altre. Possiamo aiutarvi a capire quali tecnologie impiegare, con quali benefici attesi e come approcciarle. Spesso si è (giustamente) diffidenti all’inizio per cui suggeriamo sempre di procedere a piccoli passi.</p></div>
+          </details>
+          <details>
+            <summary>Come posso gestire al meglio dati e informazioni sulla sostenibilità ?</summary>
+            <div class="acc-body"><p>Sostenibilità è uno dei termini più usati (forse abusati) di questi anni. L’impatto della regolamentazione europea per le aziende è rilevante. Crediamo che abbracciare i temi dell’ambiente, sociali e di governance possa rappresentare non solo un obbligo per dare il nostro contributo a preservare il pianeta, ma anche un’opportunità per <strong>migliorare il conto economico</strong>. L’adozione di soluzioni per il risparmio energetico, ad esempio, è un’opportunità concreta per ridurre i consumi e quindi i costi.</p></div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IA - OdV -->
+  <section class="odv reveal" id="odv">
+    <div class="container narrow">
+      <h2>IA - OdV</h2>
+      <div class="accordion">
+        <details>
+          <summary>Come strutturiamo l'Organismo di Vigilanza ?</summary>
+          <div class="acc-body">
+            <p>Le linee guida di Confindustria prevedono che l’OdV debba soddisfare i requisiti di autonomia e indipendenza, professionalità e continuità di azione. Possiamo aiutarvi a strutturarlo adeguatamente e anche farne parte. Siamo soci dell’<strong>Associazione dei Componenti degli Organismi di Vigilanza ex D.Lgs. 231/2001</strong>, associazione senza fini di lucro che riunisce professionisti e esponenti aziendali che vivono in prima persona l’esperienza degli Organismi di Vigilanza (OdV) previsti dai Modelli di Organizzazione adottati in base al Decreto Legislativo n. 231/2001.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Ci serve un Internal Audit ?</summary>
+          <div class="acc-body"><p>La missione del Dipartimento Internal Audit è di "proteggere ed accrescere il valore dell'organizzazione, fornendo assurance obiettiva e risk based, consulenza e competenza" (International Professional Practices Framework (IPPF) - Institute of Internal Auditors (IIA)). Crediamo che l'internal audit debba rappresentare un <strong>consulente interno</strong> che aiuti anche a migliorare, oltre al sistema di controllo interno, anche organizzazione, processi e sistemi in tutte le aree aziendali.</p></div>
+        </details>
+        <details>
+          <summary>Ci serve un risk assessment ?</summary>
+          <div class="acc-body"><p>I rischi fanno parte di <strong>ogni attività umana</strong>. Che ci piaccia o meno. Il risk assessment è il processo attraverso il quale vengono individuati i rischi potenziali e le attività di controllo in essere per mitigarli. Si conclude con l'identificazione dei rischi cioè l'evidenza dei fattori interni ed esterni che possono pregiudicare il raggiungimento degli obiettivi. Nonostante la letteratura metodologica infinita e la scientificità con cui si tende ad approcciare l'argomento il nostro obiettivo è produrre un <strong>risultato concreto</strong> in termini di suggerimenti, azioni e interventi.</p></div>
+        </details>
+        <details>
+          <summary>Dobbiamo adeguarci alla 231 ?</summary>
+          <div class="acc-body"><p>Il decreto legislativo 8 giugno 2001, n. 231 ha introdotto la responsabilità delle società per i reati commessi da persone fisiche nell'interesse o a vantaggio delle stesse. Presupposto di questa responsabilità (diretta, propria, autonoma e distinta da quella dell'autore del reato) è il non avere predisposto misure idonee ad evitare che il fatto delittuoso venisse commesso. Possiamo aiutarvi a dotare la società di quanto previsto per <strong>tutelarsi</strong> nella consapevolezza che l'elenco dei reati oggi inclusi nella legge (reati contro la pubblica amministrazione, reati informatici e trattamento illecito dei dati, ricettazione e riciclaggio, delitti contro l'industria e il commercio, reati societari e tributari, reati contro la personalità individuale, reati contro la persona, reati ambientali, ecc.) rendono <strong>fortemente consigliato</strong> muoversi in tal senso.</p></div>
+        </details>
+        <details>
+          <summary>Dobbiamo adeguarci alla 262 ?</summary>
+          <div class="acc-body"><p>Solo se volete quotarvi in Borsa. La legge 28 dicembre 2005, n. 262 "Disposizioni per la tutela del risparmio e la disciplina dei mercati finanziari" obbliga le società ad introdurre e mantenere nel tempo adeguati modelli e sistemi di controllo interno sui processi che alimentano l'informativa economico‑finanziaria. Possiamo aiutarvi a dotare la società di quanto previsto dalla norma. Se siete già quotati possiamo supportarvi nelle attività di <strong>monitoraggio periodico</strong>.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+    <!-- Contact -->
+    <section class="contact reveal" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>Ready to transform your finance operations with intelligent automation?
+            Contact us today to discuss your needs and discover how our solutions can
+            help you achieve your goals.</p>
+
+          <ul class="contact-list">
+            <li>
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="3" width="12" height="18" rx="2"/>
+                  <path d="M10 21v-4h4v4"/>
+                  <path d="M7 7h2M11 7h2M7 11h2M11 11h2"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Our Office</strong>
+                <div>Via Milano 123, 20100 Milano, Italy</div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="5" width="18" height="14" rx="2"/>
+                  <path d="M3 7l9 6 9-6"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Email Us</strong>
+                <div>info@mendognipartners.com</div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.14 1.02.39 2.01.75 2.96a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.12-1.32a2 2 0 0 1 2.11-.45c.95.36 1.94.61 2.96.75A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Call Us</strong>
+                <div>+39 02 1234 5678</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-form" id="consultation">
+          <h3>Book a Consultation</h3>
+          <form action="#" method="post">
+            <div class="form-row">
+              <div class="form-field float">
+                <input type="text" id="firstName" name="firstName" placeholder=" " required />
+                <label for="firstName">First Name</label>
+              </div>
+              <div class="form-field float">
+                <input type="text" id="lastName" name="lastName" placeholder=" " required />
+                <label for="lastName">Last Name</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field float">
+                <input type="email" id="email" name="email" placeholder=" " required />
+                <label for="email">Email Address</label>
+              </div>
+              <div class="form-field float">
+                <input type="text" id="company" name="company" placeholder=" " />
+                <label for="company">Company</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field full float">
+                <textarea id="message" name="message" rows="5" placeholder=" "></textarea>
+                <label for="message">Message</label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Mendogni & Partners" onerror="this.onerror=null;this.src='images/LOGO.png'" />
+        </div>
+        <p>Finance automation solutions
+            powered by UiPath technology.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Solutions</h5>
+        <ul>
+          <li><a href="#solutions">Invoice Processing</a></li>
+          <li><a href="#solutions">Cash Allocation</a></li>
+          <li><a href="#solutions">SAP Automation</a></li>
+          <li><a href="#solutions">Custom Solutions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div>© 2025 Mendogni &amp; Partners S.r.l. All rights reserved.</div>
+    </div>
+  </footer>
+  <script>
+    // Animated counters when KPIs enter the viewport
+    (function(){
+      var counters = Array.prototype.slice.call(document.querySelectorAll('.count'));
+      if(!('IntersectionObserver' in window) || counters.length===0){
+        counters.forEach(function(el){ el.textContent = Number(el.getAttribute('data-target')).toLocaleString(); });
+        return;
+      }
+      var started = false;
+      var observer = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting && !started){
+            started = true;
+            counters.forEach(function(el){
+              var target = parseInt(el.getAttribute('data-target'),10) || 0;
+              var duration = 1600; // ms
+              var startTime = null;
+              function step(timestamp){
+                if(!startTime) startTime = timestamp;
+                var progress = Math.min((timestamp - startTime) / duration, 1);
+                var current = Math.floor(progress * target);
+                el.textContent = current.toLocaleString();
+                if(progress < 1){ requestAnimationFrame(step); }
+              }
+              requestAnimationFrame(step);
+            });
+            observer.disconnect();
+          }
+        });
+      },{threshold:0.2});
+      var kpiSection = document.querySelector('.kpis');
+      if(kpiSection){ observer.observe(kpiSection); }
+    })();
+
+    // Scroll reveal helper
+    (function(){
+      var els = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+      if(els.length === 0) return;
+      if(!('IntersectionObserver' in window)){
+        els.forEach(function(el){ el.classList.add('is-visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      },{threshold:0.15});
+      els.forEach(function(el){ io.observe(el); });
+    })();
+
+    // Allow only one open panel per accordion
+    (function(){
+      var accordions = Array.prototype.slice.call(document.querySelectorAll('.accordion'));
+      accordions.forEach(function(acc){
+        var items = Array.prototype.slice.call(acc.querySelectorAll('details'));
+        items.forEach(function(item){
+          item.addEventListener('toggle', function(){
+            if(this.open){
+              items.forEach(function(other){ if(other !== item) other.open = false; });
+            }
+          });
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
+
+
