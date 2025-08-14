@@ -11,13 +11,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#top" class="brand">
-        <img src="images/logo.png" alt="Mendogni & Partners Logo" class="brand-logo" onerror="this.onerror=null;this.src='images/LOGO.png'" />
+      <a href="index.html" class="brand">
+        <span class="brand-track">
+          <img src="images/logo.png" alt="Mendogni & Partners Logo" class="brand-logo" onerror="this.onerror=null;this.src='images/LOGO.png'" />
+          <img src="images/logo.png" alt="" aria-hidden="true" class="brand-logo" onerror="this.onerror=null;this.src='images/LOGO.png'" />
+        </span>
       </a>
 
       <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
@@ -26,45 +30,45 @@
       </label>
 
       <nav class="main-nav">
-        <a href="#">Per i Clienti</a>
-        <a href="#">Chi siamo</a>
-        <a href="#">Perché Sceglierci</a>
-        <a href="#">Contatti</a>
-        <a href="#" class="btn btn-primary btn-small">Contattaci</a>
+        <a href="#solutions">Per i Clienti</a>
+        <a href="#about">Chi siamo</a>
+        <a href="#why">Perché Sceglierci</a>
+        <a href="#contact">Contatti</a>
+        <a href="#consultation" class="btn btn-primary btn-small">Contattaci</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
     <!-- Hero -->
-    <section class="hero reveal">
+    <section class="hero">
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <h1>Automation for the CFO Office — <span class="accent">Powered by UiPath</span></h1>
+        <div class="hero-copy" data-aos="fade-right">
+          <h1>Automation for the CFO Office — <span id="typewriter" class="typewriter accent" data-text="Powered by UiPath">Powered by UiPath</span></h1>
           <p>Aiutiamo le aziende ad automatizzare i processi amministrativi grazie all'intelligenza artificiale e alla robotica.</p>
           <div class="hero-actions">
             <a href="#consultation" class="btn btn-primary">Contattaci</a>
             <a href="#solutions" class="btn btn-outline">Soluzioni</a>
           </div>
         </div>
-        <div class="hero-media">
+        <div class="hero-media" data-aos="fade-left">
           <img src="images/banner.jpg" alt="Finance automation dashboard" onerror="this.onerror=null;this.src='images/Picture1.jpg'" />
         </div>
       </div>
     </section>
 
     <!-- KPIs -->
-    <section class="kpis reveal">
+    <section class="kpis">
       <div class="container kpi-grid">
-        <div class="kpi">
+        <div class="kpi" data-aos="fade-up" data-aos-delay="0">
           <div class="kpi-number"><span class="count" data-target="5782">0</span></div>
           <div class="kpi-label">Registrazioni Fatture</div>
         </div>
-        <div class="kpi">
+        <div class="kpi" data-aos="fade-up" data-aos-delay="100">
           <div class="kpi-number"><span class="count" data-target="8940">0</span></div>
           <div class="kpi-label">Bonifici Allocati (€/mln)</div>
         </div>
-        <div class="kpi">
+        <div class="kpi" data-aos="fade-up" data-aos-delay="200">
           <div class="kpi-number"><span class="count" data-target="12345">0</span></div>
           <div class="kpi-label">Registrazioni Contabili.</div>
         </div>
@@ -72,9 +76,9 @@
     </section>
 
     <!-- About -->
-    <section class="about reveal" id="about">
+    <section class="about" id="about">
       <div class="container about-grid">
-        <div class="about-copy">
+        <div class="about-copy" data-aos="fade-right">
           <h2>About Mendogni & Partners</h2>
           <p>Mendogni & Partners S.r.l. è un'azienda specializzata nell'automazione dei processi di amministrazione, finanza e controllo. Grazie alla partnership con UiPath uniamo le nostre competenze sui processi alle migliori tecnologie di intelligenza artificiale e di robotica.</p>
           <p>Sperimentiamo ogni giorno il contributo dell'automazione ai risultati aziendali, alla produttività degli uffici e alla qualità della vita delle persone. Questi sono gli obiettivi dei nostri progetti.</p>
@@ -83,22 +87,22 @@
             <span>Authorized UiPath Partner</span>
           </div>
         </div>
-        <div class="about-media">
+        <div class="about-media" data-aos="fade-left">
           <img src="images/Picture5.jpg" alt="Team collaborating in a finance meeting" />
         </div>
       </div>
     </section>
 
     <!-- Solutions -->
-    <section class="solutions reveal" id="solutions">
+    <section class="solutions" id="solutions">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-aos="fade-up">
           <h2>Per i Clienti</h2>
           <p>Realizziamo soluzioni di automazione per i vostri processi amministrativi, utilizzando i vostri sistemi e applicando le vostre regole aziendali.</p>
         </div>
 
         <div class="card-grid">
-          <article class="card">
+          <article class="card" data-aos="fade-up" data-aos-delay="0">
             <div class="card-media">
               <img src="images/Picture2.jpg" alt="Invoice processing robots" />
             </div>
@@ -113,7 +117,7 @@
             </div>
           </article>
 
-          <article class="card">
+          <article class="card" data-aos="fade-up" data-aos-delay="100">
             <div class="card-media">
               <img src="images/Picture3.jpg" alt="Cash allocation agents" />
             </div>
@@ -128,7 +132,7 @@
             </div>
           </article>
 
-          <article class="card">
+          <article class="card" data-aos="fade-up" data-aos-delay="200">
             <div class="card-media">
               <img src="images/Picture4.jpg" alt="SAP posting automation" />
             </div>
@@ -147,28 +151,28 @@
     </section>
 
     <!-- Why Choose Us -->
-    <section class="why reveal" id="why">
+    <section class="why" id="why">
       <div class="container">
-        <h2>Why Choose Us</h2>
-        <p class="why-sub">Oltre 25 anni di esperienza al servizio di aziende di ogni dimensione e settore</p>
+        <h2 data-aos="fade-up">Why Choose Us</h2>
+        <p class="why-sub" data-aos="fade-up" data-aos-delay="100">Oltre 25 anni di esperienza al servizio di aziende di ogni dimensione e settore</p>
 
         <div class="why-grid">
-          <div class="why-card">
+          <div class="why-card" data-aos="fade-up" data-aos-delay="0">
             <div class="why-icon" aria-hidden="true">★</div>
             <h4>Velocità</h4>
             <p>Our team combines deep financial knowledge with technical expertise to deliver solutions that address real business challenges.</p>
           </div>
-          <div class="why-card">
+          <div class="why-card" data-aos="fade-up" data-aos-delay="100">
             <div class="why-icon" aria-hidden="true">🤝</div>
             <h4>UiPath Partnership</h4>
             <p>Come Authorized UiPath Partner forniamo ai clienti le migliori tecnologie di robotica e intelligenza artificiale.</p>
           </div>
-          <div class="why-card">
+          <div class="why-card" data-aos="fade-up" data-aos-delay="200">
             <div class="why-icon" aria-hidden="true">🚀</div>
             <h4>Persone</h4>
             <p>Il primo approccio del personale amministrativo con i robot è spesso di paura, talvolta di odio. E' umano. Durante i nostri lavori abbiamo visto spesso cambiare questi sentimenti in qualcosa che possiamo definire ... amicizia.</p>
           </div>
-          <div class="why-card">
+          <div class="why-card" data-aos="fade-up" data-aos-delay="300">
             <div class="why-icon" aria-hidden="true">🛡️</div>
             <h4>Supporto Dedicato</h4>
             <p>Forniamo assistenza continua per monitorare l'attività dei robot e per migliorare continuamente i processi.
@@ -179,25 +183,25 @@
     </section>
 
     <!-- Partner CTA -->
-    <section class="partner-cta reveal">
+    <section class="partner-cta" id="partners">
       <div class="container partner-grid">
-        <div class="partner-copy">
+        <div class="partner-copy" data-aos="fade-right">
           <h3>Authorized UiPath Partner</h3>
           <p>As an official UiPath Partner, we leverage the world's leading enterprise automation platform to
             deliver powerful solutions for finance departments. Our certified developers and consultants ensure
             you get the most out of your automation investment.</p>
-          <a href="#consultation" class="btn btn-outline">Learn About Our Partnership</a>
+          <a href="#about" class="btn btn-outline">Learn About Our Partnership</a>
         </div>
-        <div class="partner-media">
+        <div class="partner-media" data-aos="fade-left">
           <img src="images/UiPath Authorized Partner Logos/digital-rgb/PNG/uipath-partner-authorized-lockup-digital-rgb-ob.png" alt="Authorized UiPath Partner logo" onerror="this.onerror=null;this.src='images/UiPath Authorized Partner Logos/digital-rgb/PNG/uipath-partner-authorized-lockup-digital-rgb-ow.png'" />
         </div>
       </div>
     </section>
 
   <!-- Leaders (CEO / CFO) -->
-  <section class="leaders reveal" id="leaders">
+  <section class="leaders" id="leaders">
     <div class="container leaders-grid">
-      <div class="leader-col">
+      <div class="leader-col" data-aos="fade-right">
         <h2>CdA – CEO</h2>
         <div class="accordion">
           <details>
@@ -233,7 +237,7 @@
         </div>
       </div>
 
-      <div class="leader-col">
+      <div class="leader-col" data-aos="fade-left">
         <h2>CFO</h2>
         <div class="accordion">
           <details>
@@ -260,29 +264,29 @@
   </section>
 
   <!-- IA - OdV -->
-  <section class="odv reveal" id="odv">
+  <section class="odv" id="odv">
     <div class="container narrow">
-      <h2>IA - OdV</h2>
+      <h2 data-aos="fade-up">IA - OdV</h2>
       <div class="accordion">
-        <details>
+        <details data-aos="fade-up" data-aos-delay="0">
           <summary>Come strutturiamo l'Organismo di Vigilanza ?</summary>
           <div class="acc-body">
             <p>Le linee guida di Confindustria prevedono che l’OdV debba soddisfare i requisiti di autonomia e indipendenza, professionalità e continuità di azione. Possiamo aiutarvi a strutturarlo adeguatamente e anche farne parte. Siamo soci dell’<strong>Associazione dei Componenti degli Organismi di Vigilanza ex D.Lgs. 231/2001</strong>, associazione senza fini di lucro che riunisce professionisti e esponenti aziendali che vivono in prima persona l’esperienza degli Organismi di Vigilanza (OdV) previsti dai Modelli di Organizzazione adottati in base al Decreto Legislativo n. 231/2001.</p>
           </div>
         </details>
-        <details>
+        <details data-aos="fade-up" data-aos-delay="100">
           <summary>Ci serve un Internal Audit ?</summary>
           <div class="acc-body"><p>La missione del Dipartimento Internal Audit è di "proteggere ed accrescere il valore dell'organizzazione, fornendo assurance obiettiva e risk based, consulenza e competenza" (International Professional Practices Framework (IPPF) - Institute of Internal Auditors (IIA)). Crediamo che l'internal audit debba rappresentare un <strong>consulente interno</strong> che aiuti anche a migliorare, oltre al sistema di controllo interno, anche organizzazione, processi e sistemi in tutte le aree aziendali.</p></div>
         </details>
-        <details>
+        <details data-aos="fade-up" data-aos-delay="200">
           <summary>Ci serve un risk assessment ?</summary>
           <div class="acc-body"><p>I rischi fanno parte di <strong>ogni attività umana</strong>. Che ci piaccia o meno. Il risk assessment è il processo attraverso il quale vengono individuati i rischi potenziali e le attività di controllo in essere per mitigarli. Si conclude con l'identificazione dei rischi cioè l'evidenza dei fattori interni ed esterni che possono pregiudicare il raggiungimento degli obiettivi. Nonostante la letteratura metodologica infinita e la scientificità con cui si tende ad approcciare l'argomento il nostro obiettivo è produrre un <strong>risultato concreto</strong> in termini di suggerimenti, azioni e interventi.</p></div>
         </details>
-        <details>
+        <details data-aos="fade-up" data-aos-delay="300">
           <summary>Dobbiamo adeguarci alla 231 ?</summary>
           <div class="acc-body"><p>Il decreto legislativo 8 giugno 2001, n. 231 ha introdotto la responsabilità delle società per i reati commessi da persone fisiche nell'interesse o a vantaggio delle stesse. Presupposto di questa responsabilità (diretta, propria, autonoma e distinta da quella dell'autore del reato) è il non avere predisposto misure idonee ad evitare che il fatto delittuoso venisse commesso. Possiamo aiutarvi a dotare la società di quanto previsto per <strong>tutelarsi</strong> nella consapevolezza che l'elenco dei reati oggi inclusi nella legge (reati contro la pubblica amministrazione, reati informatici e trattamento illecito dei dati, ricettazione e riciclaggio, delitti contro l'industria e il commercio, reati societari e tributari, reati contro la personalità individuale, reati contro la persona, reati ambientali, ecc.) rendono <strong>fortemente consigliato</strong> muoversi in tal senso.</p></div>
         </details>
-        <details>
+        <details data-aos="fade-up" data-aos-delay="400">
           <summary>Dobbiamo adeguarci alla 262 ?</summary>
           <div class="acc-body"><p>Solo se volete quotarvi in Borsa. La legge 28 dicembre 2005, n. 262 "Disposizioni per la tutela del risparmio e la disciplina dei mercati finanziari" obbliga le società ad introdurre e mantenere nel tempo adeguati modelli e sistemi di controllo interno sui processi che alimentano l'informativa economico‑finanziaria. Possiamo aiutarvi a dotare la società di quanto previsto dalla norma. Se siete già quotati possiamo supportarvi nelle attività di <strong>monitoraggio periodico</strong>.</p></div>
         </details>
@@ -291,9 +295,9 @@
   </section>
 
     <!-- Contact -->
-    <section class="contact reveal" id="contact">
+    <section class="contact" id="contact">
       <div class="container contact-grid">
-        <div class="contact-info">
+        <div class="contact-info" data-aos="fade-right">
           <h3>Get in Touch</h3>
           <p>Ready to transform your finance operations with intelligent automation?
             Contact us today to discuss your needs and discover how our solutions can
@@ -339,9 +343,9 @@
           </ul>
         </div>
 
-        <div class="contact-form" id="consultation">
+        <div class="contact-form" id="consultation" data-aos="fade-left">
           <h3>Book a Consultation</h3>
-          <form action="#" method="post">
+          <form  method="post">
             <div class="form-row">
               <div class="form-field float">
                 <input type="text" id="firstName" name="firstName" placeholder=" " required />
@@ -381,33 +385,24 @@
         <div class="footer-logo">
           <img src="images/logo.png" alt="Mendogni & Partners" onerror="this.onerror=null;this.src='images/LOGO.png'" />
         </div>
-        <p>Finance automation solutions
-            powered by UiPath technology.</p>
+        <p>Finance automation solutions powered by UiPath technology.<br/>Helping CFO offices streamline processes with AI and robotics.</p>
       </div>
-      <div class="footer-col">
-        <h5>Solutions</h5>
-        <ul>
-          <li><a href="#">Invoice Processing</a></li>
-          <li><a href="#">Cash Allocation</a></li>
-          <li><a href="#">SAP Automation</a></li>
-          <li><a href="#">Custom Solutions</a></li>
-        </ul>
-      </div>
+      
       <div class="footer-col">
         <h5>Company</h5>
         <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Partners</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#leaders">Team</a></li>
+          <li><a href="#contact">Careers</a></li>
+          <li><a href="#partners">Partners</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5>Legal</h5>
         <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
         </ul>
       </div>
     </div>
@@ -415,6 +410,10 @@
       <div>© 2025 Mendogni &amp; Partners S.r.l. All rights reserved.</div>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: false, duration: 700, easing: 'ease-out', offset: 60 });
+  </script>
   <script>
     // Animated counters when KPIs enter the viewport
     (function(){
@@ -481,6 +480,38 @@
           });
         });
       });
+    })();
+    // Hero typewriter effect (slow + infinite) for trailing brand only
+    (function(){
+      var el = document.getElementById('typewriter');
+      if(!el) return;
+      var text = el.getAttribute('data-text') || el.textContent.trim();
+      var speed = 60; // ms per character
+      var pauseAfterTypeMs = 1400;
+
+      function runLoop(){
+        var i = 0;
+        el.textContent = '';
+        (function type(){
+          if(i <= text.length){
+            el.textContent = text.slice(0, i++);
+            setTimeout(type, speed);
+          } else {
+            setTimeout(runLoop, pauseAfterTypeMs);
+          }
+        })();
+      }
+
+      function start(){ if(start.started) return; start.started = true; runLoop(); }
+
+      if('IntersectionObserver' in window){
+        var io = new IntersectionObserver(function(entries){
+          entries.forEach(function(entry){ if(entry.isIntersecting){ start(); io.disconnect(); } });
+        },{threshold:0.5});
+        io.observe(el);
+      } else {
+        start();
+      }
     })();
   </script>
 
