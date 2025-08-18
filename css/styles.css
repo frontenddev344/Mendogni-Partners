@@ -93,7 +93,7 @@ main > section{scroll-margin-top:var(--anchor-offset)}
 .hero{padding:56px 0;background:linear-gradient(180deg,#f3f7f5 0,#eef4f1 100%);position:relative;isolation:isolate;overflow:hidden}
 .hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
 .hero-copy h1{font-size:38px;line-height:1.15;margin:0 0 14px}
-.typewriter{display:inline;border-right:2px solid #1b8f6a}
+.typewriter{display:inline;border-right:0px solid #1b8f6a}
 @keyframes caretBlink{50%{border-color:transparent}}
 .typewriter{animation:caretBlink .9s steps(1) infinite}
 .hero-copy p{color:var(--muted);margin:0 0 18px}
