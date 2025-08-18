@@ -279,9 +279,9 @@ main > section{scroll-margin-top:var(--anchor-offset)}
 display: block;
 min-height: 48px;
 position: relative;
-padding-left: 45px;
+/* padding-left: 45px; */
 }
-.hero-copy h1 span#typewriter:before {
+/* .hero-copy h1 span#typewriter:before {
 content: "";
 position: absolute;
 top: 50%;
@@ -290,7 +290,7 @@ width: 35px;
 height: 6px;
 background: #13352b;
 transform: translateY(-50%);
-}
+} */
 .partner-cta p{
 text-align: justify;
 }
