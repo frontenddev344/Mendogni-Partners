@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/styles.css" />
   <style>
     /* Page canvas (screenshot-like) */
-    body{background:var(--bg)}
+  
     main{min-height:calc(100dvh - var(--anchor-offset));}
     .scene{position:relative;width:min(1400px,94%);margin:40px auto 0px;padding:70px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}
     @media (max-width: 1000px){.scene{flex-direction:column;gap:28px;padding:44px 16px;margin:20px auto 0}}
@@ -221,13 +221,11 @@
         <img src="images/logo.png" alt="Mendogni & Partners Logo" class="brand-logo" onerror="this.onerror=null;this.src='images/LOGO.png'" />
       </a>
       <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
-      <label for="nav-toggle" class="hamburger" aria-hidden="true">
-        <span></span><span></span><span></span>
-      </label>
+      <label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
       <nav class="main-nav">
         <a href="index.html#solutions">Per i Clienti</a>
         <a href="index.html#about">Chi siamo</a>
-        <a href="#" class="active">Team</a>
+        <a href="index.html#why">Perché Sceglierci</a>
         <a href="index.html#contact">Contatti</a>
         <a href="index.html#consultation" class="btn btn-primary btn-small">Contattaci</a>
       </nav>
@@ -251,14 +249,14 @@
           <h2 class="title mb-3">Casi Studio</h2>
 
           <div class="case-pills">
-            <a class="pill" href="index.html#solutions">Fatture Passive</a>
-            <a class="pill" href="index.html#solutions">Allocazione Incassi</a>
-            <a class="pill" href="index.html#solutions">Contabilità Generale</a>
-            <a class="pill" href="index.html#odv">IA - OdV</a>
-            <a class="pill" href="index.html#partners">Partner UiPath</a>
-            <a class="pill" href="index.html#consultation">Prenota una consulenza</a>
-            <a class="pill" href="privacy.html">Informativa sulla Privacy</a>
-            <a class="pill" href="terms.html">Termini di Servizio</a>
+            <a class="pill" href="case-study.html">Fatture Passive</a>
+            <a class="pill" href="case-study.html">Allocazione Incassi</a>
+            <a class="pill" href="case-study.html">Contabilità Generale</a>
+            <a class="pill" href="case-study.html">IA - OdV</a>
+            <a class="pill" href="case-study.html">Partner UiPath</a>
+            <a class="pill" href="case-study.html">Prenota una consulenza</a>
+            <a class="pill" href="case-study.html">Informativa sulla Privacy</a>
+            <a class="pill" href="case-study.html">Termini di Servizio</a>
           </div>
         </div>
         <svg class="wire" id="wire-what" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
